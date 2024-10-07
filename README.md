@@ -1,116 +1,331 @@
-# Opdrachtomschrijving
-Via via krijg je een klus aangeboden om de website voor een hosting provider te bouwen. Gelukkig heb je inmiddels voldoende geleerd om een simpele layout te maken. Je hoeft je nog niet druk te maken over optimalisatie voor mobiele devices. Dat mag van de opdrachtgever in een later stadium gedaan worden.
+# Opdrachtbeschrijving
 
-Je gaat de pagina opbouwen met verschillende HTML elementen en de opmaak verzorgen met diverse CSS properties. Benieuwd welke er allemaal zijn?
-Je vindt hier een overzicht van alle [HTML elementen](https://www.w3schools.com/TAgs/default.asp) en hier een overzicht van alle [CSS properties](https://www.w3schools.com/cssref/). Het werkt altijd beter om even te spieken bij een werkend voorbeeld, dan om "maar wat te proberen" uit je hoofd!
+**Inhoudsopgave**
 
-Je kunt deze opdracht maken door het project te clonen of te downloaden naar jouw eigen computer via deze GitHub repository. Mocht je nou geen zin hebben om te typen: onderaan deze README vind je alle selecteerbare dummy-tekst voor deze opdracht.
+1. [Inleiding](#inleiding)
+2. [Opdracht 1: opzet](#opdracht-1-opzet)
+3. [Opdracht 2: header en introductie](#opdracht-2-header-en-introductie)
+4. [Opdracht 3: projecten](#opdracht-3-projecten)
+5. [Opdracht 4: services](#opdracht-4-services)
+7. [Opdracht 5: contactformulier en footer](#opdracht-5-contactformulier-en-footer)
+8. [Bonusopdracht](#bonusopdracht)
+9. [Schermontwerpen](#schermontwerpen)
+    1. [Basisontwerp](#basisontwerp)
+    2. [Bonusontwerp](#bonusontwerp)
+10. [Bijlage](#bijlage)
+     1. [CSS structuur](#voorbeeld-css-structuur)
+     2. [Dummy tekst](#dummy-tekst)
 
-## Inhoudsopgave
-1. [Eindresultaat](#eindresultaat)
-2. [Randvoorwaarden](#randvoorwaarden)
-3. [Stappenplan](#stappenplan-en-richtlijnen)
-4. [Dummytekst](#dummytekst)
+## Inleiding
 
-## Eindresultaat
+Het is tijd om jouw CSS-skills in de praktijk te brengen: je gaat de home-pagina van een bekend bedrijf ontwikkelen. De
+designers van dit bedrijf hebben, naar aanleiding van hun huisstijl, alle schermontwerpen al helemaal uitgedacht. Het
+enige wat jij als aanstormende web developer hoeft te doen, is daar een werkende versie van te maken! Je kunt de
+desktop- en mobiele designs [hier](#schermontwerpen) bekijken.
 
-![Het eindresultaat op desktop](assets/examples/voorbeeld-pagina-desktop-met-css.png)
+Om je rustig kennis te laten maken met alle verschillende technieken, raden we je aan om bij het basis-ontwerp te
+beginnen. Voor het basisontwerp heb je kennis nodig van CSS Flexbox, positionering doormiddel van de `position` property
+en semantische HTML-elementen.
 
-## Randvoorwaarden
-* Je gebruikt HTML én CSS!
-* We hebben alvast een handige structuur voor je klaargezet in het CSS-bestand. Probeer bij het schrijven van de CSS alles direct op de goede plek in te voegen, zodat het netjes en overzichtelijk blijft.
-* Gebruik voor deze opdracht de stof die je op EdHub hebt gezien en gelezen.
-* Je gebruikt de afbeeldingen uit de `assets` map.
+Heb je tijd over? Dan kun je ervoor kiezen alle "toeters en bellen" van het bonusontwerp toe te voegen.
+Hiervoor heb je onder andere kennis nodig van pseudo-elementen, transities, het gebruik van vormen in CSS en gebruik
+van `z-index` om elementen boven elkaar te stapelen. Al deze technieken worden besproken in het bonushoofdstuk op
+EdHub (Hfst. 9).
 
-## Stappenplan en richtlijnen
+![browser-screenshot](./assets/screenshots/browser-screenshot.png)
+
+*Let op:* bovenstaand voorbeeld bevat bonus-opdracht elementen!
+
+## Opdracht 1: opzet
+
+Je gaat het ontwerp van deze webpagina zo gedetailleerd mogelijk namaken. Alle afbeeldingen en icoontjes die
+worden gebruikt in de designs, zijn aangeleverd in de `assets`-map van deze repository.
+
+In plaats van deze opdracht te clonen, maak je voor dit project een **eigen** project aan, _from scratch_! 
+Wanneer je aan een nieuw project gaat beginnen, maak je eerst een goede basis. Anders wordt jouw code al snel een
+rommeltje. Zorg daarom dat je onderstaande checklist afwerkt.
 
 ### 1.1 Projectopzet
-Zorg er eerst voor dat de volgende basis-concepten in orde zijn:
-- [ ] Vervang de placeholder-titel door `Domein.shop`, zodat dit bovenaan het tabblad in de browser staat;
-- [ ] Koppel het CSS-bestand aan `index.html`;
-- [ ] Zet alvast drie semantische elementen (`<header>`-, `<main>`- en `<footer>`) klaar in de body van het HTML-bestand, zodat het duidelijk is hoe de pagina in stukjes verdeeld gaat worden;
-- [ ] Voorzie jouw CSS-bestand van een complete CSS-reset;
-- [ ] Zet de kleuren (grijs #899CA0 en donkergroen #1C2B32) alvast in commentaar bovenaan het bestand, zodat je ze gemakkelijk kunt kopiëren;
-- [ ] Het gebruikte lettertype in het design is _"Poppins"_. Dit font kun je gratis vinden op Google Fonts. Importeer dit in jouw CSS-bestand en stel de font-family voor de gehele webpagina in. 
 
-### 1.2 Header
-- [ ] Voeg de titel, tekst en het formulier als HTML toe aan de header. Zorg er hierbij voor dat het uiterlijk van de tekst overeenkomt met voorbeeld;
-- [ ] Zet de content in de header netjes bij elkaar in een groep, door bijvoorbeeld een `div` te gebruiken. De groep mag maximaal 1000 pixels breed zijn. Zet de groep netjes in het midden van de pagina. Zorg ook voor wat extra ruimte aan de boven en de onderkant.
-- [ ] Zorg ervoor dat het invoerveld en button er uit komen te zien als het voorbeeld, door de hoeken af te ronden op de juiste plek. _Tip:_ je kunt deze elementen tegen elkaar aan krijgen door een negatieve margin (bijvoorbeeld: `margin: -1px;`) te gebruiken op één van de elementen. Dit is geen _best practise_, maar in dit geval de enige oplossing.
+- [ ] Maak een eigen project aan. Maak in het project alle benodigde bestanden aan, zoals een `index.html`, `styles.css`
+  , `.gitignore`, een `README.md`.
+- [ ] Download de afbeeldingen uit deze repository. Maak een map `assets` aan en zet alle afbeeldingen hierin. 
+- [ ] Zet alvast een structuur klaar in commentaar in jouw CSS-bestand. Je kunt [deze structuur](#voorbeeld-css-structuur)
+  gebruiken, maar voel je vrij om een eigen structuur te bedenken.
+- [ ] Maak een repository aan op www.GitHub.com voor jouw project.
+- [ ] Initialiseer Git in jouw project. Maak een commit en koppel daarna jouw repository aan dit project volgens de
+  instructies op GitHub. Tip: weet je niet meer hoe dit moet? Volg dan de stappen uit de video (Hfst 4.2 van de cursus Git) één voor één op.
+- [ ] Wanner dit is gelukt, maak je een feature-branch aan (`git checkout -b uitwerkingen`).  Op deze branch schrijf je jouw uitwerkingen, zodat deze later gemakkelijk kunnen worden nagekeken in een Pull Request.
 
-Zoals je kunt zien staat er een mooie afbeelding in de header. Maar we gaan je alvast verklappen dat deze niet is ingevoegd als `<img>`-element! Wanneer je een afbeelding wil gebruiken in een header (of als achtergrond van de pagina) is het gebruikelijk om deze als _achtergrond-afbeelding_ in te voegen met CSS. Dit zorgt ervoor dat de afbeelding altijd de gehele header bedekt.
+### 1.2 Stylingopzet
 
-- [ ] Gebruik de afbeelding `mountains.jpg` als achtergrond-afbeelding, doormiddel van de `background-image`-property. Bekijk [hier](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) een werkend voorbeeld van deze property. Vervolgens kun je de [background-size](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size) en de [background-position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)-property gebruiken om de afbeelding netjes de header te laten bedekken.
+- [ ] Declareer alvast een CSS-reset in jouw CSS-bestand. *Pssst*: vergeet jouw stylesheet niet te koppelen aan
+  jouw `index.html`.
 
-### 1.3 Main gedeelte van de pagina
-- [ ] Voor je aan de slag gaat met alle content in het `<main>`-gedeelte van de webpagina, is het belangrijk om het main element eerst even goed in te stellen, zodat alle content op dezelfde afstand van de rand komt te staan. Geef het `<main>`-element een maximale breedte van 1000px en plaats het in het midden met de juiste `margin`;
-- [ ] Hoeveel sections kun jij herkennen in het voorbeeld? Zet deze `<section>`-elementen klaar in het `<main>`-element en zet de bijbehorende titels erbij. Voorzie de `<section>`-elementen van een heldere class-naam, zodat je ze goed uit elkaar kunt houden in de styling. Maak de titels zo op dat ze eruitzien als op het voorbeeld;
-- [ ] Voor nu mag je de eerste section even laten voor wat het is. Voeg in de section daarna ("Wij staan voor je klaar") de afbeelding `callcenter.jpg` in (dit keer wel als `<img>`-element!) en geef deze afgeronde hoeken. _Tip:_ afbeelding te groot? Zet 'm op `100%`, dan wordt hij niet groter dan het element waar hij in staat;
-- [ ] De link in de tekst moet wijzen naar de pagina `team.html`. Geef links een grijze kleur met een lijntje eronder. Dit lijntje moet verdwijnen wanneer de gebruiker er met de muis overheen hovert. _Tip:_ Zorg ervoor dat je de styling van jouw linkjes op globale wijze beschrijft.
-- [ ] Voorzie de button van styling zodat deze er zo uitziet als het voorbeeld. Check of alles er nogsteeds goed uitziet als je de buttontekst ineens heel lang maakt.
+- [ ] De gebruikte fonts in de designs zijn `Merriweather` voor de headings en `Roboto` voor normale tekst. Deze fonts kun
+  je gratis vinden op Google Fonts, zorg er alvast voor dat je deze importeert in jouw CSS-bestand en instelt
+  als `font-family`.
 
-### 1.4 Veelgestelde vragen
-![Uitklap vragen](./assets/examples/uitklap-vragen.gif)
+- [ ] De ontwerper heeft de gebruikte kleuren voor ons
+  aangeleverd: [bekijk het kleurenpalet hier](https://coolors.co/5722cd-4b49e8-f2f0ff-ed4385-0c0c0c). Het is handig om
+  deze kleuren bovenaan jouw CSS-bestand te plakken, zodat je ze gemakkelijk kunt kopiëren wanneer je ze nodig
+  hebt. *Tip*: je kunt ook gebruik maken van
+  CSS-variabelen ([EdHub Hfst. 9.3](https://edhub.novi.nl/study/courses/514/content/12701)). Het gaat om de volgende
+  HEX-codes:
+    - Paars `#5722CD`;
+    - Blauw `#4845E4`;
+    - Roze `#ED4385`;
+    - Zwart `#0C0C0C` (voor standaard tekst);
+    - Lichtpaars `#F2F0FF` (voor de grote zwevende woorden, zoals "hello" en "services")
+      *Uitzonderingen:*
+    - Lichtgrijs `#F3F6F9` (voor de achtergrond van de projecten)
+    - Grijs `#7A7A7A` (voor de service-tegel tekst);
 
-- [ ] De veelgestelde vragen kunnen worden uitgeklapt! Hier gebruiken we het speciale `<details>`-element voor, wat het in- en uitklappen voor ons regelt. Bekijk [hier](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) hoe je deze kunt gebruiken;
-- [ ] Gebruik de juiste styling om de vragen er net zo uit te laten zien als in het voorbeeld;
-- [ ] Zorg ervoor dat de muis veranderd in een `pointer`, wanneer de gebruiker er overeen hovert.
+## Opdracht 2: header en introductie
 
-### 1.5 Testimonials
-Oké, terug naar onze eerste section ("Wat klanten zeggen over ons");
-- [ ] Laten we beginnen met de twee witte vlakken. Welke elementen lijken jou daarvoor geschikt? Zorg ervoor dat beide elementen een schaduw krijgen en over de gehele breedte spannen. Oh, en zorg ervoor dat ze niet tegen elkaar aangedrukt staan!
-- [ ] Plaats de tekst in de witte vlakken en zorg dat er voldoende ruimte tussen de tekst en het eind van het witte vlak ontstaat;
-- [ ] De afbeelding en naam van de auteur moeten samen in een groepje komen te staan. Welk element lijkt jou daarvoor geschikt?
-- [ ] Maak de afbeeldingen 44 pixels bij 44 pixels groot. Maak er vervolgens cirkels van, door de juiste `border-radius` te gebruiken. Om de afbeelding en de naam nu vervolgens naast elkaar te krijgen in plaats van onder elkaar, zul je iets moeten doen met de [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)-property van de naam;
-- [ ] _Tip:_ wil je ze netjes uitlijnen met de tekst? Spiek dan eens bij de [vertical-align](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)-property!
-- [ ] Ten slotte is het tijd om het `quote`-teken in te voegen. Deze afbeelding kun je vinden in de map `assets`. Om het element op de juiste plek te krijgen, heb je de `position`-property nodig. _Positioneer deze afbeelding tenopzichte van het witte vlak._ Het helpt om de tekst wat extra padding te geven zodat deze ruimte maakt voor het quote-teken.
+Je begint met het maken van de header en het introductieblok. Hiervoor heb je op voorhand bedacht welke
+semantische elementen je nodig zult hebben. Voel je je zelfverzekerd? Kijk dan alleen naar de aandachtspunten en volg
+jouw eigen plan! Als je meer houvast wil, bekijk dan eerst de aandachtspunten en werk daarna de volgende stappen af:
 
-### 1.6 Footer
-... Deze laten we aan jou over! ;)
+1. Zet eerst, *zonder* styling, alle benodigde HTML-elementen voor deze twee blokken in jouw `index.html`. Omdat je hier
+   niet bent om je typediploma te halen, raden we je aan de [dummy tekst](#dummy-tekst) te kopiëren!
+2. **Navigatiebalk**: zorg ervoor dat jouw menu-items netjes, naast elkaar, aan de rechterkant komen te staan. Maak het
+   makkelijker voor jezelf door tijdelijk zwarte borders om jouw elementen te plaatsen, zodat je goed ziet wat je
+   doet. *Pssst*: je hebt dit al gemaakt in de eerdere Flexbox opdracht!
+3. **Content positionering**:
+    1. **Header**: zorg ervoor dat de content van de header in het midden komt te staan. *Tip*: gebruik padding om de
+       header wat meer hoogte te geven en blijf weg van letterlijke `height: 500px` properties.
+    2. **Introductie blok**: doe nu hetzelfde voor de positionering van de introductie-tekst, om dit netjes in
+       het midden te krijgen!
+4. **Tekst en button**: nu kun je aan de slag met de details: pas de tekstkleur op beide blokken aan en maak de button
+   zo gedetailleerd mogelijk na. Let hierbij bijvoorbeeld op de schaduw onder de button en het kleurverloop op de
+   header!
+5. **Witte icoontje:** voeg ten slotte het witte icoon aan de onderkant van de header toe. Dit kun je doen doormiddel
+   van een `<img>`-tag, of door een `<div>`-tag met CSS een `background-image` te geven. Om hem vervolgens op de juiste
+   plek te krijgen, zul je moeten spelen met positionering. Vergeet niet dat wanneer je iets absoluut positioneert, je
+   het parent-element altijd een `position: relative;` moet geven!
 
-## Dummytekst
-> ## Domein.shop
-> Jouw domeinnaam registreren in slechts 1 minuut!
+### Aandachtspunten
 
-> Is jouw domein nog vrij?
->
-> Check beschikbaarheid
--------------------------------------------------------------------------
-> ## Wat zeggen klanten over ons
-> Al jaren klant bij Domein.shop. De service is goed en medewerkers zijn zeer klantvriendelijk. Snelle response, zelfs op momenten dat je het niet verwacht.
->
-> Jane Doe, Managing Director
->
-> Ik ben tevreden over Domein.shop. Met name de snelle reactie op mijn vragen en goede service maakt dat ik TransIP aan iedereen aanbeveel.
->
-> John Smith, Frontend Developer
+* In de header is een *gradient* gebruikt met de aangeleverde kleuren blauw en paars. *Tip:* gebruik
+  een [gradient-generator](https://cssgradient.io/) voor een mooi vloeiend verloop!
 
--------------------------------------------------------------------------
-> ## Wij staan voor je klaar
-> Je kunt 7 dagen per week bij ons terecht. Ons team van vakkundige medewerkers helpt je graag op weg.
->
-> Neem contact op
--------------------------------------------------------------------------
-> ## Veelgestelde vragen
-> - Wat is een goede domeinnaam?
->
-> Een goede domeinnaam moet aan enkele eisen voldoen. Ten eerste mag jouw domeinnaam niet in strijd zijn met de openbare orde of de goede zeden. Dit betekent dat je geen ongepaste domeinnaam mag registreren. Verder mag een domeinnaam enkel uit letters, cijfers en eventueel een liggend streepje bestaan. Andere leestekens zijn niet toegestaan.
->
-> - Welke extensie moet ik kiezen voor mijn domeinnaam?
->
-> Je mag helemaal zelf kiezen welke extensie jouw domeinnaam krijgt. Dit kan een .nl-extensie zijn, maar ook een .be-extensie, een .de-extensie of een .com-extensie. Vraag jezelf af op welke markt je je gaat richten, in het heden én in de toekomst. Ben je niet van plan je business de grens over te brengen? Dan heb je eigenlijk alleen een .nl-domeinnaam nodig. Je kunt andere extensies registreren om te voorkomen dat anderen dit doen, maar deze domeinnamen ga je waarschijnlijk niet zelf gebruiken.
->
-> - Wat moet ik doen als mijn domeinnaam al geregistreerd is?
->
-> Is de domeinnaam die jij wil registreren, al geregistreerd door iemand anders? Dan kun je deze niet opnieuw registreren. Jouw domeinnaam moet namelijk uniek zijn. Als je gewenste domeinnaam al geregistreerd is, heb je twee mogelijkheden. Ten eerste kun je ervoor kiezen een alternatieve domeinnaam te registreren. Dit kan een domeinnaam zijn die op jouw eerste keuze lijkt, maar ook een heel ander domein. Je vindt vanzelf wel een goede domeinnaam die nog vrij is.
->
-> - Is het mogelijk meerdere domeinnamen te registreren?
->
-> Ja, het is zeker mogelijk meerdere domeinnamen te registreren. Als je zou willen, kun je wel tientallen domeinnamen registreren. Houd er wel rekening mee dat iedere domeinnaam die je registreert, geld kost. Hoe meer domeinnamen je registreert, des te meer geld je moet betalen voor deze domeinen.
->
-> - Is het mogelijk een domeinnaam te registreren en deze niet te gebruiken?
->
-> Ja, je kunt een domeinnaam registreren zonder deze te gebruiken. Dit gebeurt regelmatig. Ten eerste zijn er veel ondernemers die de domeinnaam van hun nieuwe bedrijf alvast registreren, terwijl ze nog lang geen website hebben. Zij willen simpelweg zeker weten dat de domeinnaam nog beschikbaar is als hun website af is en registreren deze daarom alvast. Verstandig, zeker als je een domeinnaam wil registreren die andere mensen ook interessant kunnen vinden.
->
--------------------------------------------------------------------------
-> Copyright © 2022, all rights reserved.
+* De links in de navigatiebalk linken naar hun bijbehorende *gebied* op de homepagina: dit noem je een **jumplink**. Dus
+  als de gebruiker op "Contact Us" klikt, krijgt hij het contact-formulier-gedeelte van de homepagina te zien. Hoe je
+  dit implementeert, kun je nalezen op EdHub ([Hfst. 5.3](https://edhub.novi.nl/study/courses/514/content/12673)) onder
+  het kopje "ID selectors".
+* Zorg ervoor dat je de tekst op de button niet in letterlijke hoofdletters in de HTML zet. Dit is niet handig, want
+  jouw klant (het bedrijf) zou ineens van gedachten kunnen veranderen! Gebruik altijd CSS om de tekst te transformeren
+  naar hoofdletters.
+
+## Opdracht 3: projecten
+
+Je kunt nu aan de slag met het project-blok. Bekijk het ontwerp nog eens goed, lees de aandachtspunten goed door en maak
+een duidelijk plan voor jezelf over hoe je dit gaat aanpakken.
+
+### Aandachtspunten
+
+* Om ervoor te zorgen dat afbeeldingen netjes mee schalen wanneer het scherm breder of smaller wordt, hebben we een
+  andere aanpak nodig dan bij "normale" HTML-elementen. Dit doen we door onze afbeelding in een wrapper-element te
+  wikkelen, zoals bijvoorbeeld een `<span>`:
+
+```html
+<span class="image-wrapper">
+    <img src="..." alt="..."/>
+</span>
+```
+
+![image-screenshot](./assets/screenshots/image-screenshot.gif)
+
+Vervolgens geven we de afbeelding altijd een `width: 100%`, zodat ze altijd 100% van de *beschikbare ruimte* zullen
+innemen. Het wrapper-element krijgt vervolgens een maximale breedte mee (doormiddel van `max-width` of `flex-basis`),
+waardoor de afbeelding zich telkens zal aanpassen aan het omwikkelende element:
+
+```css
+img {
+    width: 100%;
+}
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+```
+
+* Het is je waarschijnlijk opgevallen dat de volgorde van de tekst en de afbeelding zijn omgedraaid bij het 2e project.
+  Dit zou je hardcoded in de HTML kunnen aanpassen, maar het is netter om dit met CSS te doen! Wanneer je één afbeelding
+  en tekstblok samen in een container zet, ben je in staat om de volgorde van de content en afbeelding aan te passen met
+  de `flex-direction` property. Je kunt de richting namelijk *reversen*! Daar lees
+  je [hier](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flex-direction) meer over.
+* ... en als je alvast wil inspelen op het feit dat er in de toekomst waarschijnlijk meer projecten bij komen, waarbij
+  je ieder 2e, 4e en 6e project omgedraaid moet zijn, kun je
+  daar [deze speciale selector](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child) voor gebruiken.
+  Door `:nth-child(even)` te gebruiken op de containers, wordt alleen ieder 2e, 4e, 6e, ..., 24e element aangesproken:
+  dus alle *even* getallen. Super handig wanneer er nog meer projecten bij komen!
+
+## Opdracht 4: services
+
+Je kunt nu aan de slag met het services-blok. Bekijk het ontwerp nog eens goed, lees de aandachtspunten goed door en
+maak een duidelijk plan voor jezelf over hoe je dit gaat aanpakken.
+
+### Aandachtspunten
+
+* Alle iconen op de service-tegels vind je terug in de meegeleverde `assets`-map. Dit zijn SVG's die je
+  simpelweg kunt invoegen met een `<img>`-element.
+* Vergeet de schaduw achter de service-tegels niet!
+* Het services-blok is een mooi voorbeeld van een flexbox-container, waarin je de tegels een basis-breedte kunt geven
+  met de `flex-basis`-property. Denk er aan of de tegels mogen meegroeien of mee krimpen wanneer de schermgrootte
+  zich aanpast.
+
+## Opdracht 5: contactformulier en footer
+
+Je kunt nu aan de slag met het contact-formulier en de kleine zwarte footer. Bekijk het ontwerp nog eens goed, lees de
+aandachtspunten goed door en maak een duidelijk plan voor jezelf over hoe je dit gaat aanpakken.
+
+### Aandachtspunten
+
+* Bouw eerst de basis van het formulier op in HTML. Maak correct gebruik van de submit-button, inputs,
+  labels en `name`-attributen. Doe dit vóór je begint met styling;
+* Het contact-blok heeft eenzelfde vloeiende kleurverloop als de header;
+* Blijf weg van absolute breedtes wanneer je invoervelden gaat stylen. Gebruik altijd een `width: 100%` en laat het
+  formulier (of een ander omwikkelend element) bepalen hoe breed de velden moeten zijn.
+* *Tip*: je kunt placeholders stylen doormiddel van de `::placeholder`-selector!
+
+## Bonusopdracht
+
+1. Gebruik CSS-variabelen om de kleurcodes in op te slaan zodat je deze in jouw stylesheet kunt gebruiken.
+2. Zorg ervoor dat de lijnen tussen de verschillende secties schuin aflopen door een uitgerekte CSS driehoek toe te
+   voegen!
+3. Voeg de zwevende woorden "hello", "work" en "services" toe achter de content. Dit kun je doen door de tekst
+   letterlijk in de HTML te zetten, maar het is beter om dit te doen door een **pseudo-element** te gebruiken *(EdHub
+   Hfst. 9.2)*.
+4. De lijnen onder de project-titels wil je invoegen als een pseudo-element. Dit doe je door de
+   afbeeldingen door middel van de `background-image`-property op een pseudo-element te plaatsen. Op deze manier vervuil
+   je de HTML niet met "nutteloze" elementen.
+5. De gradients zijn in het bonusontwerp voorzien van een doorzichtige textuur. Deze kun je als pseudo-element via een background-image invoegen.
+   Let op dat de textuur **onder** de content moet komen te staan.
+   Lees [hier](https://css-tricks.com/perfect-full-page-background-image/) meer over de `background-image` property.
+6. Zorg ervoor dat er een transitie ontstaat wanneer de gebruiker over de project-links hovert *(EdHub Hfst. 9.5)*:
+
+![bonus-moving-link](./assets/screenshots/bonus/bonus-moving-link.gif)
+
+## Schermontwerpen
+
+### Basisontwerp
+
+De screenshots zijn erg groot. Download de screenshots om ze te bekijken:
+
+- [Desktop design](https://github.com/hogeschoolnovi/frontend-html-css-concept-opdracht/blob/master/assets/screenshots/basic/basic-desktop.png)
+- [Mobiel design](https://github.com/hogeschoolnovi/frontend-html-css-concept-opdracht/blob/master/assets/screenshots/basic/basic-mobiel.png)
+
+### Bonusontwerp
+
+De screenshots zijn groot. Download de screenshots om ze te bekijken:
+
+- [Desktop design](https://github.com/hogeschoolnovi/frontend-html-css-concept-opdracht/blob/master/assets/screenshots/bonus/bonus-desktop.png)
+- [Mobiel design](https://github.com/hogeschoolnovi/frontend-html-css-concept-opdracht/blob/master/assets/screenshots/bonus/bonus-mobiel.png)
+
+## Bijlage
+
+### Voorbeeld CSS structuur
+
+```css
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
+```
+
+### Dummy tekst
+
+#### Your website is an investment in the success of your business.
+
+We are here to help you succeed.
+
+Let's work together
+
+#### Hello
+
+Rekupe is a digital agency in Los Angeles. We use strategic UX, SEO optimization and beautiful visual designs to help
+your business grow. We see every project as a fresh opportunity, pushing ourselves to create new digital experiences.
+Have a question? Click here to contact us!
+
+#### Work
+
+**Rolling Stone**
+
+You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.
+
+**Variety**
+
+Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content
+dating back to 1905.
+
+**Worth**
+
+A global media platform connecting a community that embraces worth beyond wealth.
+
+#### Services
+
+**Web Design** Good web design is how companies stand out from their competitors. High quality web design leads to
+increased user conversion and engagement. Through a proven web design process, we help clients launch websites and
+products that improve on their bottom line.
+
+**Web Development** Modern websites need to be responsive and fully functional at all sizes. We develop all of our sites
+with a mobile first approach and ensure that our code quality is clean, organized and performant. Already have a design
+but need it developed? We’re here to help!
+
+**User Experience** In order to build successful products you have to understand the user. We create user personas,
+wireframes and prototypes to test with users. This allows us to gather feedback which helps to shape the product and can
+quickly eliminate potential risks – saving you time and money.
+
+**Logo Design + Branding** Nike, Apple, Coca-Cola, Starbucks. What do all of these brands have in common? Easily
+recognizable logos and brand identity. The best brands stand out from the crowd by having a clear and unique point of
+view. We will work with you to understand your vision and help create a unique brand identity and style guide for your
+company.
+
+**SEO** Do you want your site to rank higher in search results? Google is constantly changing their algorithms for how
+they rank pages. Don’t worry about constantly playing catch-up. We will make sure your website it optimized, providing
+you the best opportunities for organic search exposure.
+
+**Copy Writing** Brand messaging needs to be clear, direct and easy to understand to be effective. A unique tone of
+voice will help you stand out from the crowd and build brand loyalty. We work with you to establish your brand bible and
+ensure your messaging is focused and targeted.
+
+#### Form
+
+Let's work together
+
+Have a question? Need a quote? Let us know!
+
+#### Footer
+
+Business website opdracht © NOVI Hogeschool 2022
